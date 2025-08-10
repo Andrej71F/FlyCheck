@@ -90,82 +90,106 @@
 		  </nav>
 		</section>
 
-		<section id="a320">
-		  <h2>✈️ Airbus A320</h2>
-		  <nav class="sub-nav">
-			<a href="#a320-cockpit">Cockpit Prep</a>
-			<a href="#a320-start">Start</a>
-			<a href="#a320-taxi">Taxi</a>
-			<a href="#a320-takeoff">Takeoff</a>
-			<a href="#a320-cruise">Cruise</a>
-			<a href="#a320-descent">Descent</a>
-			<a href="#a320-landing">Landing</a>
-			<a href="#a320-shutdown">Shutdown</a>
-		  </nav>
+<section id="a320">
+  <h2>✈️ Airbus A320</h2>
+  <nav class="sub-nav">
+    <a href="#a320-cockpit">Cockpit Prep</a>
+    <a href="#a320-start">Start</a>
+    <a href="#a320-taxi">Taxi</a>
+    <a href="#a320-takeoff">Takeoff</a>
+    <a href="#a320-climb">Climb</a>
+    <a href="#a320-cruise">Cruise</a>
+    <a href="#a320-descent">Descent</a>
+    <a href="#a320-landing">Landing</a>
+    <a href="#a320-shutdown">Shutdown</a>
+  </nav>
 
-		  <h3 id="a320-cockpit">Cockpit Preparation</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>ON</td><td>Стояночный тормоз включён</td></tr>
-			<tr onclick="toggleRow(this)"><td>BAT 1 & 2</td><td>ON</td><td>Включение аккумуляторов</td></tr>
-			<tr onclick="toggleRow(this)"><td>ADIRS</td><td>NAV</td><td>Инициализация навигации</td></tr>
-			<tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>ON</td><td>Включить насосы топлива</td></tr>
-		  </table>
+  <h3 id="a320-cockpit">Cockpit Preparation</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>ON</td><td>Стояночный тормоз включён</td></tr>
+    <tr onclick="toggleRow(this)"><td>BAT 1 & 2</td><td>ON</td><td>Включение аккумуляторов</td></tr>
+    <tr onclick="toggleRow(this)"><td>EXT PWR / APU</td><td>AVAIL / ON</td><td>Подключение внешнего питания или запуск APU</td></tr>
+    <tr onclick="toggleRow(this)"><td>ADIRS</td><td>NAV</td><td>Инициализация навигации</td></tr>
+    <tr onclick="toggleRow(this)"><td>CREW OXYGEN</td><td>CHECK</td><td>Проверка кислорода экипажа</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>ON</td><td>Включить насосы топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>HYDRAULICS</td><td>CHECK</td><td>Проверка давления в системах</td></tr>
+    <tr onclick="toggleRow(this)"><td>ECAM STATUS</td><td>CHECK</td><td>Проверка сообщений и состояния систем</td></tr>
+  </table>
 
-		  <h3 id="a320-start">Engine Start</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>ENGINE MODE SELECTOR</td><td>IGN/START</td><td>Режим запуска двигателей</td></tr>
-			<tr onclick="toggleRow(this)"><td>ENG 1 & 2</td><td>START</td><td>Запуск двигателей</td></tr>
-			<tr onclick="toggleRow(this)"><td>BLEED AIR</td><td>ON</td><td>Подача воздуха на запуск</td></tr>
-		  </table>
+  <h3 id="a320-start">Engine Start</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>ENGINE MODE SELECTOR</td><td>IGN/START</td><td>Режим запуска двигателей</td></tr>
+    <tr onclick="toggleRow(this)"><td>BLEED AIR</td><td>ON</td><td>Подача воздуха на запуск</td></tr>
+    <tr onclick="toggleRow(this)"><td>ENG 1</td><td>START</td><td>Запуск двигателя 1</td></tr>
+    <tr onclick="toggleRow(this)"><td>ENG 2</td><td>START</td><td>Запуск двигателя 2</td></tr>
+    <tr onclick="toggleRow(this)"><td>GEN 1 & 2</td><td>ON</td><td>Подключение генераторов</td></tr>
+    <tr onclick="toggleRow(this)"><td>APU</td><td>OFF</td><td>Отключение APU после запуска двигателей</td></tr>
+  </table>
 
-		  <h3 id="a320-taxi">Taxi</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>NOSE LIGHT</td><td>TAXI</td><td>Включить рулёжный свет</td></tr>
-			<tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить закрылки</td></tr>
-			<tr onclick="toggleRow(this)"><td>BRAKES</td><td>CHECK</td><td>Проверка тормозов</td></tr>
-		  </table>
+  <h3 id="a320-taxi">Taxi</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>NOSE LIGHT</td><td>TAXI</td><td>Включить рулёжный свет</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить закрылки</td></tr>
+    <tr onclick="toggleRow(this)"><td>BRAKES</td><td>CHECK</td><td>Проверка тормозов</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLIGHT CONTROL</td><td>CHECK</td><td>Проверка рулевых поверхностей</td></tr>
+  </table>
 
-		  <h3 id="a320-takeoff">Takeoff</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>THRUST</td><td>SET</td><td>Установить взлётную тягу</td></tr>
-			<tr onclick="toggleRow(this)"><td>ECAM</td><td>MONITOR</td><td>Контроль параметров на экране</td></tr>
-			<tr onclick="toggleRow(this)"><td>GEAR</td><td>UP</td><td>Убрать шасси</td></tr>
-		  </table>
+  <h3 id="a320-takeoff">Takeoff</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>THRUST</td><td>SET</td><td>Установить взлётную тягу</td></tr>
+    <tr onclick="toggleRow(this)"><td>ECAM</td><td>MONITOR</td><td>Контроль параметров на экране</td></tr>
+    <tr onclick="toggleRow(this)"><td>GEAR</td><td>UP</td><td>Убрать шасси</td></tr>
+  </table>
 
-		  <h3 id="a320-cruise">Cruise</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Включить автопилот</td></tr>
-			<tr onclick="toggleRow(this)"><td>FUEL</td><td>MONITOR</td><td>Контроль расхода топлива</td></tr>
-		  </table>
+  <h3 id="a320-climb">Climb</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>FLAPS</td><td>RETRACT</td><td>Убрать закрылки</td></tr>
+    <tr onclick="toggleRow(this)"><td>CLIMB THRUST</td><td>SET</td><td>Установить режим набора высоты</td></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Включить автопилот</td></tr>
+  </table>
 
-		  <h3 id="a320-descent">Descent</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>ALTITUDE</td><td>SET</td><td>Установить целевую высоту</td></tr>
-			<tr onclick="toggleRow(this)"><td>BRIEFING</td><td>COMPLETE</td><td>Провести предпосадочный брифинг</td></tr>
-		  </table>
+  <h3 id="a320-cruise">Cruise</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL</td><td>MONITOR</td><td>Контроль расхода топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>ECAM</td><td>CHECK</td><td>Проверка состояния систем</td></tr>
+  </table>
 
-		  <h3 id="a320-landing">Landing</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>GEAR</td><td>DOWN</td><td>Выпустить шасси</td></tr>
-			<tr onclick="toggleRow(this)"><td>SPOILERS</td><td>ARM</td><td>Вооружить интерцепторы</td></tr>
-			<tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить посадочные закрылки</td></tr>
-		  </table>
+  <h3 id="a320-descent">Descent</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>ALTITUDE</td><td>SET</td><td>Установить целевую высоту</td></tr>
+    <tr onclick="toggleRow(this)"><td>BRIEFING</td><td>COMPLETE</td><td>Провести предпосадочный брифинг</td></tr>
+    <tr onclick="toggleRow(this)"><td>ECAM MEMO</td><td>CHECK</td><td>Проверка конфигурации посадки</td></tr>
+  </table>
 
-		  <h3 id="a320-shutdown">Shutdown</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>ENG 1 & 2</td><td>OFF</td><td>Выключить двигатели</td></tr>
-			<tr onclick="toggleRow(this)"><td>BEACON</td><td>OFF</td><td>Выключить маяк</td></tr>
-			<tr onclick="toggleRow(this)"><td>BAT 1 & 2</td><td>OFF</td><td>Отключить аккумуляторы</td></tr>
-		  </table>
-		</section>
+  <h3 id="a320-landing">Landing</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>GEAR</td><td>DOWN</td><td>Выпустить шасси</td></tr>
+    <tr onclick="toggleRow(this)"><td>SPOILERS</td><td>ARM</td><td>Вооружить интерцепторы</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить посадочные закрылки</td></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOBRAKE</td><td>SET</td><td>Установить режим торможения</td></tr>
+    <tr onclick="toggleRow(this)"><td>LANDING LIGHTS</td><td>ON</td><td>Включить посадочные огни</td></tr>
+  </table>
+
+  <h3 id="a320-shutdown">Shutdown</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>ENG 1 & 2</td><td>OFF</td><td>Выключить двигатели</td></tr>
+    <tr onclick="toggleRow(this)"><td>BEACON</td><td>OFF</td><td>Выключить маяк</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>OFF</td><td>Отключить насосы топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>APU</td><td>OFF</td><td>Остановить вспомогательную силовую установку</td></tr>
+    <tr onclick="toggleRow(this)"><td>ELEC</td><td>EXT PWR / OFF</td><td>Подключить внешнее питание или отключить электросистему</td></tr>
+    <tr onclick="toggleRow(this)"><td>BAT 1 & 2</td><td>OFF</td><td>Отключить аккумуляторы</td></tr>
+    <tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>ON</td><td>Установить тормоз на стоянке</td></tr>
+  </table>
+</section>
 
 
 		<section id="b737">

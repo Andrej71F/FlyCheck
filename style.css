@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #0078d4;
+}
+
+nav {
+  background-color: #0078d4;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav.main-nav, nav.sub-nav {
+  background: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+nav.sub-nav a {
+  color: #0055aa;
+  margin-right: 15px;
+}
+
+section {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #d0e4f5;
+}
+
+tr {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #f0f8ff;
+}
+
+tr.checked {
+  background-color: #d4f4d7;
+  text-decoration: line-through;
+}
+
+.tab-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.tab-button {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #0078d4;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  background-color: #0078d4;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}

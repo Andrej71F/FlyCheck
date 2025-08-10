@@ -90,6 +90,7 @@
 		  </nav>
 		</section>
 
+
 <section id="a320">
   <h2>✈️ Airbus A320</h2>
   <nav class="sub-nav">
@@ -112,9 +113,13 @@
     <tr onclick="toggleRow(this)"><td>EXT PWR / APU</td><td>AVAIL / ON</td><td>Подключение внешнего питания или запуск APU</td></tr>
     <tr onclick="toggleRow(this)"><td>ADIRS</td><td>NAV</td><td>Инициализация навигации</td></tr>
     <tr onclick="toggleRow(this)"><td>CREW OXYGEN</td><td>CHECK</td><td>Проверка кислорода экипажа</td></tr>
+    <tr onclick="toggleRow(this)"><td>EMERGENCY EQUIPMENT</td><td>CHECK</td><td>Проверка аварийного оборудования</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL QUANTITY</td><td>CHECK</td><td>Проверка заправки</td></tr>
     <tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>ON</td><td>Включить насосы топлива</td></tr>
     <tr onclick="toggleRow(this)"><td>HYDRAULICS</td><td>CHECK</td><td>Проверка давления в системах</td></tr>
     <tr onclick="toggleRow(this)"><td>ECAM STATUS</td><td>CHECK</td><td>Проверка сообщений и состояния систем</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLIGHT INSTRUMENTS</td><td>SET</td><td>Установка высоты, курса, скорости</td></tr>
+    <tr onclick="toggleRow(this)"><td>MCDU INIT</td><td>COMPLETE</td><td>Инициализация маршрута и данных</td></tr>
   </table>
 
   <h3 id="a320-start">Engine Start</h3>
@@ -126,6 +131,7 @@
     <tr onclick="toggleRow(this)"><td>ENG 2</td><td>START</td><td>Запуск двигателя 2</td></tr>
     <tr onclick="toggleRow(this)"><td>GEN 1 & 2</td><td>ON</td><td>Подключение генераторов</td></tr>
     <tr onclick="toggleRow(this)"><td>APU</td><td>OFF</td><td>Отключение APU после запуска двигателей</td></tr>
+    <tr onclick="toggleRow(this)"><td>ENGINE PARAMETERS</td><td>MONITOR</td><td>Контроль N1, EGT, FF</td></tr>
   </table>
 
   <h3 id="a320-taxi">Taxi</h3>
@@ -135,6 +141,8 @@
     <tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить закрылки</td></tr>
     <tr onclick="toggleRow(this)"><td>BRAKES</td><td>CHECK</td><td>Проверка тормозов</td></tr>
     <tr onclick="toggleRow(this)"><td>FLIGHT CONTROL</td><td>CHECK</td><td>Проверка рулевых поверхностей</td></tr>
+    <tr onclick="toggleRow(this)"><td>RUDDER TRIM</td><td>SET</td><td>Установка триммера руля направления</td></tr>
+    <tr onclick="toggleRow(this)"><td>TAKEOFF DATA</td><td>CONFIRM</td><td>Проверка V1, VR, V2</td></tr>
   </table>
 
   <h3 id="a320-takeoff">Takeoff</h3>
@@ -143,6 +151,8 @@
     <tr onclick="toggleRow(this)"><td>THRUST</td><td>SET</td><td>Установить взлётную тягу</td></tr>
     <tr onclick="toggleRow(this)"><td>ECAM</td><td>MONITOR</td><td>Контроль параметров на экране</td></tr>
     <tr onclick="toggleRow(this)"><td>GEAR</td><td>UP</td><td>Убрать шасси</td></tr>
+    <tr onclick="toggleRow(this)"><td>CHRONO</td><td>START</td><td>Запуск таймера</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLIGHT MODE ANNUNCIATIONS</td><td>CHECK</td><td>Проверка SRS, RWY, NAV</td></tr>
   </table>
 
   <h3 id="a320-climb">Climb</h3>
@@ -151,21 +161,27 @@
     <tr onclick="toggleRow(this)"><td>FLAPS</td><td>RETRACT</td><td>Убрать закрылки</td></tr>
     <tr onclick="toggleRow(this)"><td>CLIMB THRUST</td><td>SET</td><td>Установить режим набора высоты</td></tr>
     <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Включить автопилот</td></tr>
+    <tr onclick="toggleRow(this)"><td>LANDING LIGHTS</td><td>OFF</td><td>Выключить на высоте >10 000 ft</td></tr>
+    <tr onclick="toggleRow(this)"><td>SEATBELT SIGN</td><td>OFF</td><td>По решению экипажа</td></tr>
   </table>
-
   <h3 id="a320-cruise">Cruise</h3>
   <table>
     <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Поддержание маршрута и высоты</td></tr>
     <tr onclick="toggleRow(this)"><td>FUEL</td><td>MONITOR</td><td>Контроль расхода топлива</td></tr>
     <tr onclick="toggleRow(this)"><td>ECAM</td><td>CHECK</td><td>Проверка состояния систем</td></tr>
+    <tr onclick="toggleRow(this)"><td>POSITION REPORT</td><td>SEND</td><td>Доклад о местоположении (если требуется)</td></tr>
+    <tr onclick="toggleRow(this)"><td>WEATHER RADAR</td><td>MONITOR</td><td>Контроль погодных условий</td></tr>
   </table>
 
   <h3 id="a320-descent">Descent</h3>
   <table>
     <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-    <tr onclick="toggleRow(this)"><td>ALTITUDE</td><td>SET</td><td>Установить целевую высоту</td></tr>
+    <tr onclick="toggleRow(this)"><td>ALTITUDE</td><td>SET</td><td>Установить целевую высоту снижения</td></tr>
     <tr onclick="toggleRow(this)"><td>BRIEFING</td><td>COMPLETE</td><td>Провести предпосадочный брифинг</td></tr>
     <tr onclick="toggleRow(this)"><td>ECAM MEMO</td><td>CHECK</td><td>Проверка конфигурации посадки</td></tr>
+    <tr onclick="toggleRow(this)"><td>SEATBELT SIGN</td><td>ON</td><td>Включить табло ремней</td></tr>
+    <tr onclick="toggleRow(this)"><td>APPROACH PHASE</td><td>ACTIVATE</td><td>Активация в MCDU</td></tr>
   </table>
 
   <h3 id="a320-landing">Landing</h3>
@@ -176,6 +192,8 @@
     <tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить посадочные закрылки</td></tr>
     <tr onclick="toggleRow(this)"><td>AUTOBRAKE</td><td>SET</td><td>Установить режим торможения</td></tr>
     <tr onclick="toggleRow(this)"><td>LANDING LIGHTS</td><td>ON</td><td>Включить посадочные огни</td></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>OFF</td><td>Отключить по решению экипажа</td></tr>
+    <tr onclick="toggleRow(this)"><td>CALL OUTS</td><td>MONITOR</td><td>Контроль высотных меток (100, 50, 40...)</td></tr>
   </table>
 
   <h3 id="a320-shutdown">Shutdown</h3>
@@ -188,163 +206,246 @@
     <tr onclick="toggleRow(this)"><td>ELEC</td><td>EXT PWR / OFF</td><td>Подключить внешнее питание или отключить электросистему</td></tr>
     <tr onclick="toggleRow(this)"><td>BAT 1 & 2</td><td>OFF</td><td>Отключить аккумуляторы</td></tr>
     <tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>ON</td><td>Установить тормоз на стоянке</td></tr>
+    <tr onclick="toggleRow(this)"><td>TRANSPONDER</td><td>STBY</td><td>Перевести в режим ожидания</td></tr>
+    <tr onclick="toggleRow(this)"><td>IRS</td><td>OFF</td><td>Отключить инерциальные системы (если завершение дня)</td></tr>
+  </table>
+</section>
+
+<section id="b737">
+  <h2>🛫 Boeing 737</h2>
+  <nav class="sub-nav">
+    <a href="#b737-cockpit">Cockpit Prep</a>
+    <a href="#b737-start">Start</a>
+    <a href="#b737-taxi">Taxi</a>
+    <a href="#b737-takeoff">Takeoff</a>
+    <a href="#b737-climb">Climb</a>
+    <a href="#b737-cruise">Cruise</a>
+    <a href="#b737-descent">Descent</a>
+    <a href="#b737-landing">Landing</a>
+    <a href="#b737-shutdown">Shutdown</a>
+  </nav>
+
+  <h3 id="b737-cockpit">Cockpit Preparation</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>SET</td><td>Стояночный тормоз установлен</td></tr>
+    <tr onclick="toggleRow(this)"><td>BATTERY</td><td>ON</td><td>Включить аккумулятор</td></tr>
+    <tr onclick="toggleRow(this)"><td>GROUND POWER / APU</td><td>AVAIL / ON</td><td>Подключить внешнее питание или запустить APU</td></tr>
+    <tr onclick="toggleRow(this)"><td>IRS MODE</td><td>NAV</td><td>Инициализация навигации</td></tr>
+    <tr onclick="toggleRow(this)"><td>EMERGENCY EQUIPMENT</td><td>CHECK</td><td>Проверка аварийного оборудования</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL QUANTITY</td><td>CHECK</td><td>Проверка заправки</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>ON</td><td>Включить насосы топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>HYDRAULICS</td><td>CHECK</td><td>Проверка давления в системах</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLIGHT INSTRUMENTS</td><td>SET</td><td>Установка высоты, курса, скорости</td></tr>
+    <tr onclick="toggleRow(this)"><td>CDU / FMC</td><td>INIT & ROUTE</td><td>Инициализация маршрута и данных</td></tr>
+  </table>
+
+  <h3 id="b737-start">Engine Start</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>PACKS</td><td>OFF</td><td>Отключить кондиционирование</td></tr>
+    <tr onclick="toggleRow(this)"><td>ISOLATION VALVE</td><td>OPEN</td><td>Открыть изоляционный клапан</td></tr>
+    <tr onclick="toggleRow(this)"><td>ENGINE START SWITCH</td><td>GRD</td><td>Запуск двигателя</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL CONTROL</td><td>RUN</td><td>Подача топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>GENERATOR</td><td>ON</td><td>Подключить генератор</td></tr>
+    <tr onclick="toggleRow(this)"><td>APU</td><td>OFF</td><td>Отключить APU после запуска двигателей</td></tr>
+    <tr onclick="toggleRow(this)"><td>ENGINE PARAMETERS</td><td>MONITOR</td><td>Контроль N1, EGT, N2</td></tr>
+  </table>
+
+  <h3 id="b737-taxi">Taxi</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>TAXI LIGHT</td><td>ON</td><td>Включить рулёжный свет</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить закрылки</td></tr>
+    <tr onclick="toggleRow(this)"><td>BRAKES</td><td>CHECK</td><td>Проверка тормозов</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLIGHT CONTROLS</td><td>CHECK</td><td>Проверка рулевых поверхностей</td></tr>
+    <tr onclick="toggleRow(this)"><td>TRIM</td><td>SET</td><td>Установка триммера по центру</td></tr>
+    <tr onclick="toggleRow(this)"><td>TAKEOFF DATA</td><td>CONFIRM</td><td>Проверка V1, VR, V2</td></tr>
+  </table>
+
+  <h3 id="b737-takeoff">Takeoff</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>THRUST</td><td>SET</td><td>Установить взлётную тягу</td></tr>
+    <tr onclick="toggleRow(this)"><td>GEAR</td><td>UP</td><td>Убрать шасси</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLAPS</td><td>RETRACT</td><td>Убрать закрылки</td></tr>
+    <tr onclick="toggleRow(this)"><td>LNAV / VNAV</td><td>ENGAGE</td><td>Включить навигационные режимы</td></tr>
+    <tr onclick="toggleRow(this)"><td>CHRONO</td><td>START</td><td>Запуск таймера</td></tr>
+  </table>
+
+  <h3 id="b737-climb">Climb</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>CLIMB THRUST</td><td>SET</td><td>Установить режим набора высоты</td></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Включить автопилот</td></tr>
+    <tr onclick="toggleRow(this)"><td>LANDING LIGHTS</td><td>OFF</td><td>Выключить на высоте >10 000 ft</td></tr>
+    <tr onclick="toggleRow(this)"><td>SEATBELT SIGN</td><td>OFF</td><td>По решению экипажа</td></tr>
+  </table>
+  <h3 id="b737-cruise">Cruise</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Поддержание маршрута и высоты</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL</td><td>MONITOR</td><td>Контроль расхода топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>PRESSURIZATION</td><td>CHECK</td><td>Контроль давления в кабине</td></tr>
+    <tr onclick="toggleRow(this)"><td>POSITION REPORT</td><td>SEND</td><td>Доклад о местоположении (если требуется)</td></tr>
+    <tr onclick="toggleRow(this)"><td>WEATHER RADAR</td><td>MONITOR</td><td>Контроль погодных условий</td></tr>
+  </table>
+
+  <h3 id="b737-descent">Descent</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>ALTITUDE</td><td>SET</td><td>Установить целевую высоту снижения</td></tr>
+    <tr onclick="toggleRow(this)"><td>BRIEFING</td><td>COMPLETE</td><td>Провести предпосадочный брифинг</td></tr>
+    <tr onclick="toggleRow(this)"><td>SEATBELT SIGN</td><td>ON</td><td>Включить табло ремней</td></tr>
+    <tr onclick="toggleRow(this)"><td>APPROACH CHECKLIST</td><td>COMPLETE</td><td>Завершить предпосадочную карту</td></tr>
+    <tr onclick="toggleRow(this)"><td>PRESSURIZATION</td><td>SET</td><td>Установить посадочную высоту</td></tr>
+  </table>
+
+  <h3 id="b737-landing">Landing</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>GEAR</td><td>DOWN</td><td>Выпустить шасси</td></tr>
+    <tr onclick="toggleRow(this)"><td>SPEED BRAKE</td><td>ARM</td><td>Вооружить интерцепторы</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить посадочные закрылки</td></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOBRAKE</td><td>SET</td><td>Установить режим торможения</td></tr>
+    <tr onclick="toggleRow(this)"><td>LANDING LIGHTS</td><td>ON</td><td>Включить посадочные огни</td></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>OFF</td><td>Отключить по решению экипажа</td></tr>
+    <tr onclick="toggleRow(this)"><td>CALL OUTS</td><td>MONITOR</td><td>Контроль высотных меток (100, 50, 40...)</td></tr>
+  </table>
+
+  <h3 id="b737-shutdown">Shutdown</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>ENG 1 & 2</td><td>CUTOFF</td><td>Выключить двигатели</td></tr>
+    <tr onclick="toggleRow(this)"><td>BEACON</td><td>OFF</td><td>Выключить маяк</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>OFF</td><td>Отключить насосы топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>APU</td><td>OFF</td><td>Остановить вспомогательную силовую установку</td></tr>
+    <tr onclick="toggleRow(this)"><td>ELEC</td><td>EXT PWR / OFF</td><td>Подключить внешнее питание или отключить электросистему</td></tr>
+    <tr onclick="toggleRow(this)"><td>BATTERY</td><td>OFF</td><td>Отключить аккумулятор</td></tr>
+    <tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>SET</td><td>Установить тормоз на стоянке</td></tr>
+    <tr onclick="toggleRow(this)"><td>TRANSPONDER</td><td>STBY</td><td>Перевести в режим ожидания</td></tr>
+    <tr onclick="toggleRow(this)"><td>IRS</td><td>OFF</td><td>Отключить инерциальные системы (если завершение дня)</td></tr>
+  </table>
+</section>
+
+<section id="b777">
+  <h2>🛬 Boeing 777</h2>
+  <nav class="sub-nav">
+    <a href="#b777-cockpit">Cockpit Prep</a>
+    <a href="#b777-start">Start</a>
+    <a href="#b777-taxi">Taxi</a>
+    <a href="#b777-takeoff">Takeoff</a>
+    <a href="#b777-climb">Climb</a>
+    <a href="#b777-cruise">Cruise</a>
+    <a href="#b777-descent">Descent</a>
+    <a href="#b777-landing">Landing</a>
+    <a href="#b777-shutdown">Shutdown</a>
+  </nav>
+
+  <h3 id="b777-cockpit">Cockpit Preparation</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>SET</td><td>Стояночный тормоз установлен</td></tr>
+    <tr onclick="toggleRow(this)"><td>BATTERY</td><td>ON</td><td>Включить аккумулятор</td></tr>
+    <tr onclick="toggleRow(this)"><td>GROUND POWER / APU</td><td>AVAIL / ON</td><td>Подключить внешнее питание или запустить APU</td></tr>
+    <tr onclick="toggleRow(this)"><td>IRS</td><td>NAV</td><td>Инициализация навигации</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL QUANTITY</td><td>CHECK</td><td>Проверка заправки</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>ON</td><td>Включить насосы топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>HYDRAULICS</td><td>CHECK</td><td>Проверка давления в системах</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLIGHT INSTRUMENTS</td><td>SET</td><td>Установка высоты, курса, скорости</td></tr>
+    <tr onclick="toggleRow(this)"><td>CDU / FMC</td><td>INIT & ROUTE</td><td>Инициализация маршрута и данных</td></tr>
+    <tr onclick="toggleRow(this)"><td>EMERGENCY EQUIPMENT</td><td>CHECK</td><td>Проверка аварийного оборудования</td></tr>
+  </table>
+
+  <h3 id="b777-start">Engine Start</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>PACKS</td><td>OFF</td><td>Отключить кондиционирование</td></tr>
+    <tr onclick="toggleRow(this)"><td>ISOLATION VALVE</td><td>OPEN</td><td>Открыть изоляционный клапан</td></tr>
+    <tr onclick="toggleRow(this)"><td>ENGINE START SELECTOR</td><td>START</td><td>Запуск двигателя</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL CONTROL SWITCH</td><td>RUN</td><td>Подача топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>GENERATOR</td><td>ON</td><td>Подключить генератор</td></tr>
+    <tr onclick="toggleRow(this)"><td>APU</td><td>OFF</td><td>Отключить APU после запуска двигателей</td></tr>
+    <tr onclick="toggleRow(this)"><td>ENGINE PARAMETERS</td><td>MONITOR</td><td>Контроль N1, EGT, N2</td></tr>
+  </table>
+  <h3 id="b777-taxi">Taxi</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>TAXI LIGHT</td><td>ON</td><td>Включить рулёжный свет</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить закрылки</td></tr>
+    <tr onclick="toggleRow(this)"><td>BRAKES</td><td>CHECK</td><td>Проверка тормозов</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLIGHT CONTROLS</td><td>CHECK</td><td>Проверка рулевых поверхностей</td></tr>
+    <tr onclick="toggleRow(this)"><td>TRIM</td><td>SET</td><td>Установка триммера по центру</td></tr>
+    <tr onclick="toggleRow(this)"><td>TAKEOFF DATA</td><td>CONFIRM</td><td>Проверка V1, VR, V2</td></tr>
+  </table>
+
+  <h3 id="b777-takeoff">Takeoff</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>THRUST</td><td>SET</td><td>Установить взлётную тягу</td></tr>
+    <tr onclick="toggleRow(this)"><td>GEAR</td><td>UP</td><td>Убрать шасси</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLAPS</td><td>RETRACT</td><td>Убрать закрылки</td></tr>
+    <tr onclick="toggleRow(this)"><td>LNAV / VNAV</td><td>ENGAGE</td><td>Включить навигационные режимы</td></tr>
+    <tr onclick="toggleRow(this)"><td>CHRONO</td><td>START</td><td>Запуск таймера</td></tr>
+  </table>
+
+  <h3 id="b777-climb">Climb</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>CLIMB THRUST</td><td>SET</td><td>Установить режим набора высоты</td></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Включить автопилот</td></tr>
+    <tr onclick="toggleRow(this)"><td>LANDING LIGHTS</td><td>OFF</td><td>Выключить на высоте >10 000 ft</td></tr>
+    <tr onclick="toggleRow(this)"><td>SEATBELT SIGN</td><td>OFF</td><td>По решению экипажа</td></tr>
+  </table>
+
+  <h3 id="b777-cruise">Cruise</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Поддержание маршрута и высоты</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL</td><td>MONITOR</td><td>Контроль расхода топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>PRESSURIZATION</td><td>CHECK</td><td>Контроль давления в кабине</td></tr>
+    <tr onclick="toggleRow(this)"><td>POSITION REPORT</td><td>SEND</td><td>Доклад о местоположении (если требуется)</td></tr>
+    <tr onclick="toggleRow(this)"><td>WEATHER RADAR</td><td>MONITOR</td><td>Контроль погодных условий</td></tr>
+  </table>
+
+  <h3 id="b777-descent">Descent</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>ALTITUDE</td><td>SET</td><td>Установить целевую высоту снижения</td></tr>
+    <tr onclick="toggleRow(this)"><td>BRIEFING</td><td>COMPLETE</td><td>Провести предпосадочный брифинг</td></tr>
+    <tr onclick="toggleRow(this)"><td>SEATBELT SIGN</td><td>ON</td><td>Включить табло ремней</td></tr>
+    <tr onclick="toggleRow(this)"><td>APPROACH CHECKLIST</td><td>COMPLETE</td><td>Завершить предпосадочную карту</td></tr>
+    <tr onclick="toggleRow(this)"><td>PRESSURIZATION</td><td>SET</td><td>Установить посадочную высоту</td></tr>
+  </table>
+
+  <h3 id="b777-landing">Landing</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>GEAR</td><td>DOWN</td><td>Выпустить шасси</td></tr>
+    <tr onclick="toggleRow(this)"><td>SPEED BRAKE</td><td>ARM</td><td>Вооружить интерцепторы</td></tr>
+    <tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить посадочные закрылки</td></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOBRAKE</td><td>SET</td><td>Установить режим торможения</td></tr>
+    <tr onclick="toggleRow(this)"><td>LANDING LIGHTS</td><td>ON</td><td>Включить посадочные огни</td></tr>
+    <tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>OFF</td><td>Отключить по решению экипажа</td></tr>
+    <tr onclick="toggleRow(this)"><td>CALL OUTS</td><td>MONITOR</td><td>Контроль высотных меток (100, 50, 40...)</td></tr>
+  </table>
+
+  <h3 id="b777-shutdown">Shutdown</h3>
+  <table>
+    <tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
+    <tr onclick="toggleRow(this)"><td>ENG 1 & 2</td><td>CUTOFF</td><td>Выключить двигатели</td></tr>
+    <tr onclick="toggleRow(this)"><td>BEACON</td><td>OFF</td><td>Выключить маяк</td></tr>
+    <tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>OFF</td><td>Отключить насосы топлива</td></tr>
+    <tr onclick="toggleRow(this)"><td>APU</td><td>OFF</td><td>Остановить вспомогательную силовую установку</td></tr>
+    <tr onclick="toggleRow(this)"><td>ELEC</td><td>EXT PWR / OFF</td><td>Подключить внешнее питание или отключить электросистему</td></tr>
+    <tr onclick="toggleRow(this)"><td>BATTERY</td><td>OFF</td><td>Отключить аккумулятор</td></tr>
+    <tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>SET</td><td>Установить тормоз на стоянке</td></tr>
+    <tr onclick="toggleRow(this)"><td>TRANSPONDER</td><td>STBY</td><td>Перевести в режим ожидания</td></tr>
+    <tr onclick="toggleRow(this)"><td>IRS</td><td>OFF</td><td>Отключить инерциальные системы (если завершение дня)</td></tr>
   </table>
 </section>
 
 
-		<section id="b737">
-		  <h2>🛫 Boeing 737</h2>
-		  <nav class="sub-nav">
-			<a href="#b737-cockpit">Cockpit Prep</a>
-			<a href="#b737-start">Start</a>
-			<a href="#b737-taxi">Taxi</a>
-			<a href="#b737-takeoff">Takeoff</a>
-			<a href="#b737-cruise">Cruise</a>
-			<a href="#b737-descent">Descent</a>
-			<a href="#b737-landing">Landing</a>
-			<a href="#b737-shutdown">Shutdown</a>
-		  </nav>
-
-		  <h3 id="b737-cockpit">Cockpit Preparation</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>SET</td><td>Стояночный тормоз установлен</td></tr>
-			<tr onclick="toggleRow(this)"><td>BATTERY</td><td>ON</td><td>Включить аккумулятор</td></tr>
-			<tr onclick="toggleRow(this)"><td>IRS MODE</td><td>NAV</td><td>Инициализация навигации</td></tr>
-			<tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>ON</td><td>Включить насосы топлива</td></tr>
-		  </table>
-
-		  <h3 id="b737-start">Engine Start</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>PACKS</td><td>OFF</td><td>Отключить кондиционирование</td></tr>
-			<tr onclick="toggleRow(this)"><td>ENGINE START SWITCH</td><td>GRD</td><td>Запуск двигателя</td></tr>
-			<tr onclick="toggleRow(this)"><td>FUEL CONTROL</td><td>RUN</td><td>Подача топлива</td></tr>
-		  </table>
-
-		  <h3 id="b737-taxi">Taxi</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>TAXI LIGHT</td><td>ON</td><td>Включить рулёжный свет</td></tr>
-			<tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить закрылки</td></tr>
-			<tr onclick="toggleRow(this)"><td>BRAKES</td><td>CHECK</td><td>Проверка тормозов</td></tr>
-		  </table>
-
-		  <h3 id="b737-takeoff">Takeoff</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>THRUST</td><td>SET</td><td>Установить взлётную тягу</td></tr>
-			<tr onclick="toggleRow(this)"><td>GEAR</td><td>UP</td><td>Убрать шасси</td></tr>
-			<tr onclick="toggleRow(this)"><td>FLAPS</td><td>RETRACT</td><td>Убрать закрылки</td></tr>
-		  </table>
-
-		  <h3 id="b737-cruise">Cruise</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Включить автопилот</td></tr>
-			<tr onclick="toggleRow(this)"><td>FUEL</td><td>MONITOR</td><td>Контроль расхода топлива</td></tr>
-		  </table>
-
-		  <h3 id="b737-descent">Descent</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>ALTITUDE</td><td>SET</td><td>Установить целевую высоту</td></tr>
-			<tr onclick="toggleRow(this)"><td>BRIEFING</td><td>COMPLETE</td><td>Провести предпосадочный брифинг</td></tr>
-		  </table>
-
-		  <h3 id="b737-landing">Landing</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>GEAR</td><td>DOWN</td><td>Выпустить шасси</td></tr>
-			<tr onclick="toggleRow(this)"><td>SPEED BRAKE</td><td>ARM</td><td>Вооружить интерцепторы</td></tr>
-			<tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить посадочные закрылки</td></tr>
-		  </table>
-
-		  <h3 id="b737-shutdown">Shutdown</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>ENG 1 & 2</td><td>CUTOFF</td><td>Выключить двигатели</td></tr>
-			<tr onclick="toggleRow(this)"><td>BEACON</td><td>OFF</td><td>Выключить маяк</td></tr>
-			<tr onclick="toggleRow(this)"><td>BATTERY</td><td>OFF</td><td>Отключить аккумулятор</td></tr>
-		  </table>
-		</section>
-
-		<section id="b777">
-		  <h2>🛬 Boeing 777</h2>
-		  <nav class="sub-nav">
-			<a href="#b777-cockpit">Cockpit Prep</a>
-			<a href="#b777-start">Start</a>
-			<a href="#b777-taxi">Taxi</a>
-			<a href="#b777-takeoff">Takeoff</a>
-			<a href="#b777-cruise">Cruise</a>
-			<a href="#b777-descent">Descent</a>
-			<a href="#b777-landing">Landing</a>
-			<a href="#b777-shutdown">Shutdown</a>
-		  </nav>
-
-		  <h3 id="b777-cockpit">Cockpit Preparation</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>PARKING BRAKE</td><td>SET</td><td>Стояночный тормоз установлен</td></tr>
-			<tr onclick="toggleRow(this)"><td>BATTERY</td><td>ON</td><td>Включить аккумулятор</td></tr>
-			<tr onclick="toggleRow(this)"><td>IRS</td><td>NAV</td><td>Инициализация навигации</td></tr>
-			<tr onclick="toggleRow(this)"><td>FUEL PUMPS</td><td>ON</td><td>Включить насосы топлива</td></tr>
-		  </table>
-
-		  <h3 id="b777-start">Engine Start</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>PACKS</td><td>OFF</td><td>Отключить кондиционирование</td></tr>
-			<tr onclick="toggleRow(this)"><td>ENGINE START SELECTOR</td><td>START</td><td>Запуск двигателя</td></tr>
-			<tr onclick="toggleRow(this)"><td>FUEL CONTROL SWITCH</td><td>RUN</td><td>Подача топлива</td></tr>
-		  </table>
-
-		  <h3 id="b777-taxi">Taxi</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>TAXI LIGHT</td><td>ON</td><td>Включить рулёжный свет</td></tr>
-			<tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить закрылки</td></tr>
-			<tr onclick="toggleRow(this)"><td>BRAKES</td><td>CHECK</td><td>Проверка тормозов</td></tr>
-		  </table>
-
-		  <h3 id="b777-takeoff">Takeoff</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>THRUST</td><td>SET</td><td>Установить взлётную тягу</td></tr>
-			<tr onclick="toggleRow(this)"><td>GEAR</td><td>UP</td><td>Убрать шасси</td></tr>
-			<tr onclick="toggleRow(this)"><td>FLAPS</td><td>RETRACT</td><td>Убрать закрылки</td></tr>
-		  </table>
-
-		  <h3 id="b777-cruise">Cruise</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>AUTOPILOT</td><td>ON</td><td>Включить автопилот</td></tr>
-			<tr onclick="toggleRow(this)"><td>FUEL</td><td>MONITOR</td><td>Контроль расхода топлива</td></tr>
-		  </table>
-
-		  <h3 id="b777-descent">Descent</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>ALTITUDE</td><td>SET</td><td>Установить целевую высоту</td></tr>
-			<tr onclick="toggleRow(this)"><td>BRIEFING</td><td>COMPLETE</td><td>Провести предпосадочный брифинг</td></tr>
-		  </table>
-
-		  <h3 id="b777-landing">Landing</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>GEAR</td><td>DOWN</td><td>Выпустить шасси</td></tr>
-			<tr onclick="toggleRow(this)"><td>SPEED BRAKE</td><td>ARM</td><td>Вооружить интерцепторы</td></tr>
-			<tr onclick="toggleRow(this)"><td>FLAPS</td><td>SET</td><td>Установить посадочные закрылки</td></tr>
-		  </table>
-
-		  <h3 id="b777-shutdown">Shutdown</h3>
-		  <table>
-			<tr><th>Оригинал</th><th>Действие</th><th>Пояснение</th></tr>
-			<tr onclick="toggleRow(this)"><td>ENG 1 & 2</td><td>CUTOFF</td><td>Выключить двигатели</td></tr>
-			<tr onclick="toggleRow(this)"><td>BEACON</td><td>OFF</td><td>Выключить маяк</td></tr>
-			<tr onclick="toggleRow(this)"><td>BATTERY</td><td>OFF</td><td>Отключить аккумулятор</td></tr>
-		  </table>
-		</section>
 	
 	
 	
